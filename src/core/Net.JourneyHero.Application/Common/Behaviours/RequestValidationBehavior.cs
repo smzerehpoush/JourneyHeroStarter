@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using MediatR;
-using ValidationException = Northwind.Application.Common.Exceptions.ValidationException;
+using ValidationException = Net.JourneyHero.Application.Common.Exceptions.ValidationException;
 
 namespace Net.JourneyHero.Application.Common.Behaviours
 {

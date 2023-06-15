@@ -5,5 +5,4 @@ namespace Net.JourneyHero.Application.Products.Commands.AddProduct;
 
 public class AddProductCommand : ICommand<ProductViewModel>
 {
-    
 }

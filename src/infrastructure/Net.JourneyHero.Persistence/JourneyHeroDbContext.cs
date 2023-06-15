@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Net.JourneyHero.Application.Common.Interfaces;
+using Net.JourneyHero.Domain.Common;
 using Net.JourneyHero.Domain.Products;
 
 namespace Net.JourneyHero.Persistence
@@ -14,7 +15,7 @@ namespace Net.JourneyHero.Persistence
         }
 
         public JourneyHeroDbContext(
-            DbContextOptions<JourneyHeroDbContext> options, 
+            DbContextOptions<JourneyHeroDbContext> options,
             ICurrentUserService currentUserService)
             : base(options)
         {
@@ -22,7 +23,7 @@ namespace Net.JourneyHero.Persistence
         }
 
         public DbSet<Product> Products { get; set; }
-        
+
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
             foreach (var entry in ChangeTracker.Entries<AuditableEntity>())
@@ -31,11 +32,11 @@ namespace Net.JourneyHero.Persistence
                 {
                     case EntityState.Added:
                         entry.Entity.CreatedBy = _currentUserService.UserId;
-                        entry.Entity.Created = _dateTime.Now;
+                        entry.Entity.Created = DateTime.Now;
                         break;
                     case EntityState.Modified:
                         entry.Entity.LastModifiedBy = _currentUserService.UserId;
-                        entry.Entity.LastModified = _dateTime.Now;
+                        entry.Entity.LastModified = DateTime.Now;
                         break;
                 }
             }

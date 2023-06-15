@@ -1,5 +1,4 @@
-﻿using Inventory.Domain.Products;
-using Inventory.Domain.Products.Rules;
+﻿using Inventory.Domain.Products.Rules;
 using Net.JourneyHero.Domain.BuildingBlocks.Entities;
 using Net.JourneyHero.Domain.Products.Rules;
 

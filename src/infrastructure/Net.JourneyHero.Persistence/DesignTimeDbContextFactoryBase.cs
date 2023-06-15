@@ -1,28 +1,26 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.IO;
 
-namespace Northwind.Persistence
+namespace Net.JourneyHero.Persistence
 {
     public abstract class DesignTimeDbContextFactoryBase<TContext> :
         IDesignTimeDbContextFactory<TContext> where TContext : DbContext
     {
-        private const string ConnectionStringName = "NorthwindDatabase";
+        private const string ConnectionStringName = "Default";
         private const string AspNetCoreEnvironment = "ASPNETCORE_ENVIRONMENT";
 
         public TContext CreateDbContext(string[] args)
         {
-            var basePath = Directory.GetCurrentDirectory() + string.Format("{0}..{0}WebUI", Path.DirectorySeparatorChar);
-            return Create(basePath, Environment.GetEnvironmentVariable(AspNetCoreEnvironment));
+            var basePath = Directory.GetCurrentDirectory() +
+                           string.Format("{0}..{0}WebUI", Path.DirectorySeparatorChar);
+            return Create(basePath, Environment.GetEnvironmentVariable(AspNetCoreEnvironment) ?? "Local");
         }
 
         protected abstract TContext CreateNewInstance(DbContextOptions<TContext> options);
 
         private TContext Create(string basePath, string environmentName)
         {
-            
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(basePath)
                 .AddJsonFile("appsettings.json")
@@ -31,7 +29,8 @@ namespace Northwind.Persistence
                 .AddEnvironmentVariables()
                 .Build();
 
-            var connectionString = configuration.GetConnectionString(ConnectionStringName);
+            var connectionString = configuration.GetConnectionString(ConnectionStringName) ??
+                                   throw new NullReferenceException("connection string is null");
 
             return Create(connectionString);
         }
@@ -40,14 +39,16 @@ namespace Northwind.Persistence
         {
             if (string.IsNullOrEmpty(connectionString))
             {
-                throw new ArgumentException($"Connection string '{ConnectionStringName}' is null or empty.", nameof(connectionString));
+                throw new ArgumentException($"Connection string '{ConnectionStringName}' is null or empty.",
+                    nameof(connectionString));
             }
 
-            Console.WriteLine($"DesignTimeDbContextFactoryBase.Create(string): Connection string: '{connectionString}'.");
+            Console.WriteLine(
+                $"DesignTimeDbContextFactoryBase.Create(string): Connection string: '{connectionString}'.");
 
             var optionsBuilder = new DbContextOptionsBuilder<TContext>();
 
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseMySQL(connectionString);
 
             return CreateNewInstance(optionsBuilder.Options);
         }

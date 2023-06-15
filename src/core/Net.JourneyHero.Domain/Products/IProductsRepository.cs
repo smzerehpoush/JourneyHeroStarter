@@ -1,6 +1,4 @@
-﻿using Inventory.Domain.Products;
-
-namespace Net.JourneyHero.Domain.Products;
+﻿namespace Net.JourneyHero.Domain.Products;
 
 public interface IProductsRepository
 {

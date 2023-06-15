@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Net.JourneyHero.Persistence;
 
-namespace Northwind.Persistence
+namespace Net.JourneyHero.Persistence
 {
-    public class NorthwindDbContextFactory : DesignTimeDbContextFactoryBase<JourneyHeroDbContext>
+    public class JourneyHeroDbContextFactory : DesignTimeDbContextFactoryBase<JourneyHeroDbContext>
     {
         protected override JourneyHeroDbContext CreateNewInstance(DbContextOptions<JourneyHeroDbContext> options)
         {
