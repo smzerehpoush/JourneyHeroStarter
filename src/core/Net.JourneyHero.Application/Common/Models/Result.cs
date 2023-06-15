@@ -1,4 +1,6 @@
-﻿namespace Net.JourneyHero.Application.Common.Models
+﻿using MediatR;
+
+namespace Net.JourneyHero.Application.Common.Models
 {
     public class Result<TData>
     {
