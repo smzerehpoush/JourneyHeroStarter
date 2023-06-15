@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ABFEDDB1-F6C1-4338-B432-B36D179FD6BC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B9FA4DF4-977F-4922-A67D-5EBDA5ED9B58}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EC9006E9-CFC2-4E66-A7A1-374E303F8D4C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{D2CA7F50-024B-49D9-B93E-76B8F6DE24B4}"
@@ -21,6 +19,15 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Persistence", "src\infrastructure\Net.JourneyHero.Persistence\Net.JourneyHero.Persistence.csproj", "{6E88D987-A350-4F9F-936E-B45153884AE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.WebApi", "src\presentation\Net.JourneyHero.WebApi\Net.JourneyHero.WebApi.csproj", "{3084C9DA-7E0D-43B6-A0DE-9A14E8C94084}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B94EE1DD-D2C2-43F1-B72D-89693593C159}"
+	ProjectSection(SolutionItems) = preProject
+		docs\ARCHITECTURE.md = docs\ARCHITECTURE.md
+		docs\CQRS-ES.md = docs\CQRS-ES.md
+		docs\DDD.md = docs\DDD.md
+		docs\HEXAGONAL.md = docs\HEXAGONAL.md
+		docs\SOLID.md = docs\SOLID.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
