@@ -1,6 +1,6 @@
-﻿using BuildingBlocks.Domain.BusinessRules;
+﻿using Net.JourneyHero.Domain.Common.BusinessRules;
 
-namespace Inventory.Domain.Products.Rules;
+namespace Net.JourneyHero.Domain.Products.Rules;
 
 internal sealed record NameMustNotBeEmptyRule(string Name) : IBusinessRule
 {

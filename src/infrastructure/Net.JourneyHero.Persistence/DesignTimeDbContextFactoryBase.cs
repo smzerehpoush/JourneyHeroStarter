@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Reflection;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 
@@ -12,8 +13,7 @@ namespace Net.JourneyHero.Persistence
 
         public TContext CreateDbContext(string[] args)
         {
-            var basePath = Directory.GetCurrentDirectory() +
-                           string.Format("{0}..{0}WebUI", Path.DirectorySeparatorChar);
+            var basePath = Assembly.GetExecutingAssembly().Location;
             return Create(basePath, Environment.GetEnvironmentVariable(AspNetCoreEnvironment) ?? "Local");
         }
 
@@ -49,6 +49,7 @@ namespace Net.JourneyHero.Persistence
             var optionsBuilder = new DbContextOptionsBuilder<TContext>();
 
             optionsBuilder.UseMySQL(connectionString);
+            optionsBuilder.EnableDetailedErrors();
 
             return CreateNewInstance(optionsBuilder.Options);
         }

@@ -1,4 +1,4 @@
-﻿namespace BuildingBlocks.Domain.BusinessRules;
+﻿namespace Net.JourneyHero.Domain.Common.BusinessRules;
 
 /// <summary>
 /// Interface, that business rule has to implement.

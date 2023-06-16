@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  mysql:
+    image: "mysql:latest"
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_USER=journeyhero_user
+      - MYSQL_PASSWORD=123456
+      - MYSQL_DATABASE=journeyhero_db
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes: 
+  mysql_data:

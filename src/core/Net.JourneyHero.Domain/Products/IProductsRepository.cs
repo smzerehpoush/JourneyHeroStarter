@@ -4,7 +4,7 @@ public interface IProductsRepository
 {
     IAsyncEnumerable<Product> GetAllAsync(CancellationToken cancellationToken);
 
-    Task<Product?> GetByIdAsync(ProductId id, CancellationToken cancellationToken);
+    Task<Product?> GetByIdAsync(Guid id, CancellationToken cancellationToken);
 
     Task DeleteByIdAsync(Guid id, CancellationToken cancellationToken);
 }

@@ -13,8 +13,7 @@ internal sealed class ProductEntityTypeConfiguration : IEntityTypeConfiguration<
         builder.HasKey(product => product.Id);
 
         builder.Property(product => product.Id)
-            .HasColumnName(nameof(Product.Id))
-            .HasConversion(id => id.Value, value => new ProductId(value));
+            .HasColumnName(nameof(Product.Id));
 
         builder.Property(product => product.Name)
             .HasColumnName(nameof(Product.Name))

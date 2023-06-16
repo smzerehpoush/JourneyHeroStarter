@@ -1,4 +1,4 @@
-﻿namespace Net.JourneyHero.Domain.BuildingBlocks.Events;
+﻿namespace Net.JourneyHero.Domain.Common.Events;
 
 /// <summary>
 /// Domain event abstraction, that stores information, when the event was occurred on.

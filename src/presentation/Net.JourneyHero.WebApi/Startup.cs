@@ -6,6 +6,7 @@ using Net.JourneyHero.Infrastructure;
 using Net.JourneyHero.Persistence;
 using Net.JourneyHero.WebApi.Middlewares;
 using Net.JourneyHero.WebApi.Services;
+using Serilog;
 
 namespace Net.JourneyHero.WebApi
 {
@@ -53,6 +54,7 @@ namespace Net.JourneyHero.WebApi
             app.UseOpenApi();
 
             app.UseSwaggerUi3();
+            app.UseSwaggerUI();
             app.UseRouting();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });

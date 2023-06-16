@@ -1,6 +1,4 @@
-﻿using BuildingBlocks.Domain.BusinessRules;
-
-namespace Net.JourneyHero.Domain.BuildingBlocks.BusinessRules;
+﻿namespace Net.JourneyHero.Domain.Common.BusinessRules;
 
 /// <summary>
 /// Domain exception on invalid business rule.

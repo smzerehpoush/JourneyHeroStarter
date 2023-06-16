@@ -1,12 +1,11 @@
-﻿using Inventory.Domain.Products.Rules;
-using Net.JourneyHero.Domain.BuildingBlocks.Entities;
+﻿using Net.JourneyHero.Domain.Common.Entities;
 using Net.JourneyHero.Domain.Products.Rules;
 
 namespace Net.JourneyHero.Domain.Products;
 
-public sealed class Product : Entity
+public sealed class Product : AuditableEntity
 {
-    private Product(ProductId id, string name, string category, string? description)
+    private Product(Guid id, string name, string category, string? description)
     {
         Id = id;
         Name = name;
@@ -14,7 +13,7 @@ public sealed class Product : Entity
         Category = category;
     }
 
-    public ProductId Id { get; private set; }
+    public Guid Id { get; private set; }
 
     public string Name { get; private set; }
 
@@ -27,6 +26,6 @@ public sealed class Product : Entity
         CheckRule(new NameMustNotBeEmptyRule(name));
         CheckRule(new CategoryMustNotBeEmptyRule(category));
 
-        return new Product(ProductId.New, name, category, description);
+        return new Product(Guid.NewGuid(), name, category, description);
     }
 }

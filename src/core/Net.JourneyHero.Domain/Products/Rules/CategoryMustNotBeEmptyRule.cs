@@ -1,4 +1,4 @@
-﻿using BuildingBlocks.Domain.BusinessRules;
+﻿using Net.JourneyHero.Domain.Common.BusinessRules;
 
 namespace Net.JourneyHero.Domain.Products.Rules;
 

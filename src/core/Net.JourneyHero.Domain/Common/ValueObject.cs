@@ -3,7 +3,7 @@
     // Source: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/implement-value-objects
     public abstract class ValueObject
     {
-        protected static bool EqualOperator(ValueObject left, ValueObject right)
+        protected static bool EqualOperator(ValueObject? left, ValueObject? right)
         {
             if (left is null ^ right is null)
             {
@@ -20,7 +20,7 @@
 
         protected abstract IEnumerable<object> GetAtomicValues();
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             if (obj == null || obj.GetType() != GetType())
             {
@@ -28,8 +28,8 @@
             }
 
             var other = (ValueObject)obj;
-            var thisValues = GetAtomicValues().GetEnumerator();
-            var otherValues = other.GetAtomicValues().GetEnumerator();
+            using var thisValues = GetAtomicValues().GetEnumerator();
+            using var otherValues = other.GetAtomicValues().GetEnumerator();
 
             while (thisValues.MoveNext() && otherValues.MoveNext())
             {
