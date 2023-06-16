@@ -10,15 +10,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{C9AB48B0-D4E3-4A82-A4C0-3F71AED1AA21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Application", "src\core\Net.JourneyHero.Application\Net.JourneyHero.Application.csproj", "{9F1FFDE1-3BF9-4A10-A35E-32715E65A4FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Application", "Application\src\core\Net.JourneyHero.Application\Net.JourneyHero.Application.csproj", "{9F1FFDE1-3BF9-4A10-A35E-32715E65A4FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Domain", "src\core\Net.JourneyHero.Domain\Net.JourneyHero.Domain.csproj", "{ED658E8D-D387-476F-BDE3-71F08323C62F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Domain", "Application\src\core\Net.JourneyHero.Domain\Net.JourneyHero.Domain.csproj", "{ED658E8D-D387-476F-BDE3-71F08323C62F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Infrastructure", "src\infrastructure\Net.JourneyHero.Infrastructure\Net.JourneyHero.Infrastructure.csproj", "{711A3D08-C84A-4ECA-9AEA-962CD6F2F2BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Infrastructure", "Application\src\infrastructure\Net.JourneyHero.Infrastructure\Net.JourneyHero.Infrastructure.csproj", "{711A3D08-C84A-4ECA-9AEA-962CD6F2F2BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Persistence", "src\infrastructure\Net.JourneyHero.Persistence\Net.JourneyHero.Persistence.csproj", "{6E88D987-A350-4F9F-936E-B45153884AE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Persistence", "Application\src\infrastructure\Net.JourneyHero.Persistence\Net.JourneyHero.Persistence.csproj", "{6E88D987-A350-4F9F-936E-B45153884AE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.WebApi", "src\presentation\Net.JourneyHero.WebApi\Net.JourneyHero.WebApi.csproj", "{3084C9DA-7E0D-43B6-A0DE-9A14E8C94084}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.WebApi", "Application\src\presentation\Net.JourneyHero.WebApi\Net.JourneyHero.WebApi.csproj", "{3084C9DA-7E0D-43B6-A0DE-9A14E8C94084}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B94EE1DD-D2C2-43F1-B72D-89693593C159}"
 	ProjectSection(SolutionItems) = preProject
