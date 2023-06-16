@@ -7,7 +7,7 @@ namespace Net.JourneyHero.Persistence
 {
     public class JourneyHeroDbContext : DbContext, IJourneyHeroDbContext
     {
-        private readonly ICurrentUserService _currentUserService;
+        private readonly ICurrentUserService _currentUserService = null!;
 
         public JourneyHeroDbContext(DbContextOptions<JourneyHeroDbContext> options)
             : base(options)

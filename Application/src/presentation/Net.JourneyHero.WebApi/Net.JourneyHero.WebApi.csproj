@@ -5,6 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
@@ -27,6 +28,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\..\Common\src\presentation\Net.JourneyHero.Common.WebApi\Net.JourneyHero.Common.WebApi.csproj" />
       <ProjectReference Include="..\..\core\Net.JourneyHero.Application\Net.JourneyHero.Application.csproj" />
       <ProjectReference Include="..\..\infrastructure\Net.JourneyHero.Infrastructure\Net.JourneyHero.Infrastructure.csproj" />
       <ProjectReference Include="..\..\infrastructure\Net.JourneyHero.Persistence\Net.JourneyHero.Persistence.csproj" />

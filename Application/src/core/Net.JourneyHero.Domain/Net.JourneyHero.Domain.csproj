@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\..\Common\src\core\Net.JourneyHero.Common.Domain\Net.JourneyHero.Common.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

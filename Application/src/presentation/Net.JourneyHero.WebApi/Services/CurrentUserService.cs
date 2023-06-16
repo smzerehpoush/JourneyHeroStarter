@@ -7,7 +7,7 @@ namespace Net.JourneyHero.WebApi.Services
     {
         public CurrentUserService(IHttpContextAccessor httpContextAccessor)
         {
-            UserId = httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
+            UserId = Guid.NewGuid().ToString();
         }
 
         public string UserId { get; }

@@ -51,7 +51,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Common.Infr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Common.Persistence", "Common\src\infrastructure\Net.JourneyHero.Common.Persistence\Net.JourneyHero.Common.Persistence.csproj", "{4AE3CCCA-8FE2-4C74-A807-15FCED9B5548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Common.Presentation", "Common\src\presentation\Net.JourneyHero.Common.Presentation\Net.JourneyHero.Common.Presentation.csproj", "{78892AB8-DB09-46A5-8D50-0F4FE4B55871}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.Common.WebApi", "Common\src\presentation\Net.JourneyHero.Common.WebApi\Net.JourneyHero.Common.WebApi.csproj", "{78892AB8-DB09-46A5-8D50-0F4FE4B55871}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

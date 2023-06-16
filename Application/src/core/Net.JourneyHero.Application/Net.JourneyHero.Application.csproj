@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\..\Common\src\core\Net.JourneyHero.Common.Application\Net.JourneyHero.Common.Application.csproj" />
       <ProjectReference Include="..\Net.JourneyHero.Domain\Net.JourneyHero.Domain.csproj" />
     </ItemGroup>
 
@@ -20,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="BuildingBlocks\CQRS\" />
+      <Folder Include="Common\" />
     </ItemGroup>
 
 </Project>

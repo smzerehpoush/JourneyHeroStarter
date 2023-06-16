@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\..\Common\src\infrastructure\Net.JourneyHero.Common.Infrastructure\Net.JourneyHero.Common.Infrastructure.csproj" />
       <ProjectReference Include="..\..\core\Net.JourneyHero.Application\Net.JourneyHero.Application.csproj" />
     </ItemGroup>
 
