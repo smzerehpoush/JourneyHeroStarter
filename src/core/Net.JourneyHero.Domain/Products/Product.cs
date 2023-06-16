@@ -16,9 +16,7 @@ public sealed class Product : AuditableEntity
     public Guid Id { get; private set; }
 
     public string Name { get; private set; }
-
     public string Category { get; private set; }
-
     public string? Description { get; private set; }
 
     public static Product Create(string name, string category, string? description = default)

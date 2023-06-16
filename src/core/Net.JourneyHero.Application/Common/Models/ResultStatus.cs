@@ -2,6 +2,8 @@
 
 public class ResultStatus
 {
+    public static readonly ResultStatus Ok = new ResultStatus(0, "ok");
+
     public ResultStatus(int resultCode, string messageKey)
     {
         ResultCode = resultCode;

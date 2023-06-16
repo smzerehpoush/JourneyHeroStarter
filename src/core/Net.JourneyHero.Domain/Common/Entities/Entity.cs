@@ -28,7 +28,7 @@ public abstract class Entity
     /// </summary>
     /// <param name="rule">Business rule to check.</param>
     /// <exception cref="BusinessRuleValidationException">Exception can be thrown on invalid business rule.</exception>
-    protected static void CheckRule(BusinessRules.IBusinessRule rule)
+    protected static void CheckRule(IBusinessRule rule)
     {
         if (rule.BrokenWhen)
         {

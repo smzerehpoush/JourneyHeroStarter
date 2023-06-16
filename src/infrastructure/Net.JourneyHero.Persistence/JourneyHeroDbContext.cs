@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Net.JourneyHero.Application.Common.Interfaces;
-using Net.JourneyHero.Domain.Common;
 using Net.JourneyHero.Domain.Common.Entities;
 using Net.JourneyHero.Domain.Products;
 

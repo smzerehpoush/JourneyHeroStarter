@@ -2,9 +2,10 @@
 
 public interface IProductsRepository
 {
-    IAsyncEnumerable<Product> GetAllAsync(CancellationToken cancellationToken);
+    Task<Product> Add(Product entity, CancellationToken cancellationToken);
+    Task<List<Product>> GetAllAsync(CancellationToken cancellationToken);
 
-    Task<Product?> GetByIdAsync(Guid id, CancellationToken cancellationToken);
+    Task<Product> GetByIdAsync(Guid id, CancellationToken cancellationToken);
 
     Task DeleteByIdAsync(Guid id, CancellationToken cancellationToken);
 }
