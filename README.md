@@ -1,56 +1,17 @@
-# Journey Hero Starter Project
+# Journey Hero Mono Repository
 
-A .NET/.NET Core template to use Onion Architecture and DDD (Domain Driven Design) with CQRS and ES with a simple example on how to use all this architecture together from the Controller until the Repository class using Domain objects and different patterns.
+this repository contains Journey Hero backend solutions. we have a **[Common](Common)** Folder that contains common projects and 
+each project in every layer could add reference to corresponding common project. 
 
-### Documentation
+each directory is for a particular project and should contain these sub-folders: 
+  - docs
+  - src
+  - tests
 
-You can find information about this template in:
+**_docs_** contains documentations for project, including technical and business documentations.
 
-- [Main Architecture](docs/ARCHITECTURE.md)
-- [Hexagonal Architecture](docs/HEXAGONAL.md)
-- [DDD](docs/DDD.md)
-- [CQRS AND ES](docs/CQRS-ES.md)
-- [SOLID](docs/SOLID.md)
+**_src_** contains source codes but just source code! no tests included in this directory.
+src contains sub-directories for each project, e.g. core, infrastructure, presentation
 
-### Usage
-
-1. Clone this repository
-2. To allow the api to be created you will need to install the template from nuget:
-
-```
-dotnet new -i {{Path_where_you_cloned_the_repository}}
-```
-
-- Example:
-
-```
-dotnet new -i C:\GitLocal\dotnet-template-onion
-```
-
-3. To check that the template has been installed successfully:
-
-```
-dotnet new -l
-```
-
-- There should now be a new template **dotnet_journeyhero_starter**
-
-```
-Templates                                          Short Name                 Language          Tags
-----------------------------------------------------------------------------------------------------------
-.NET Core 6.0 Template with CQRS, ES and DDD       dotnet_journeyhero_starter      [C#]              Web/API/Microservices
-```
-
-4. Create the .Net Core Solution
-
-```
-dotnet new dotnet_journeyhero_starter -n {{Namespace_of_your_project}} -o <outputFolder>
-```
-
-- This will create the folder containing a solution and project folder.
-  ![](images/installation.jpg)
-
-And you are ready to go, you can use Visual Studio, Visual Studio Code or any other IDE to proceed with your coding.
-
-### Structure of the template
-- todo
+**_tests_** here we create write our tests, including unit, integration, end-to-end and so on. sub-directories and
+structure should be **same as** src directory. 
