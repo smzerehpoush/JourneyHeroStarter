@@ -21,7 +21,7 @@ Inspired by [all the other awesome things](https://github.com/bayandin/awesome-a
 
 - [Event Sourcing by Martin Fowler](http://martinfowler.com/eaaDev/EventSourcing.html)
 - [Event sourcing revisited](https://lostechies.com/gabrielschenker/2015/05/26/event-sourcing-revisited/)
-- [Event Sourcing applied – the Aggregate](https://lostechies.com/gabrielschenker/2015/06/06/event-sourcing-applied-the-aggregate/)
+- [Event Sourcing applied â€“ the Aggregate](https://lostechies.com/gabrielschenker/2015/06/06/event-sourcing-applied-the-aggregate/)
 - [Event-sourcing, Part I](http://karmajunkie.com/blog/2012/05/05/event-sourcing/)
 - [Event sourcing for the rest of us](http://tojans.me/blog/2013/07/28/event-sourcing-for-the-rest-of-us/)
 - [Achieving Consistency in CQRS with Linear Event Store](http://squirrel.pl/blog/2015/09/14/achieving-consistency-in-cqrs-with-linear-event-store/)
@@ -54,7 +54,7 @@ Inspired by [all the other awesome things](https://github.com/bayandin/awesome-a
 
 ## Talks (Videos)
 
-- [Greg Young — A Decade of DDD, CQRS, Event Sourcing](https://www.youtube.com/watch?v=LDW0QWie21s)
+- [Greg Young â€” A Decade of DDD, CQRS, Event Sourcing](https://www.youtube.com/watch?v=LDW0QWie21s)
 - [Greg Young - CQRS and Event Sourcing - Code on the Beach 2014](https://www.youtube.com/watch?v=JHGkaShoyNs)
 - [CQRS/DDD by Greg Young](https://www.youtube.com/watch?v=KXqrBySgX-s)
 - [GregYoung 8 CQRS Class](https://www.youtube.com/watch?v=whCk1Q87_ZI)
@@ -96,7 +96,7 @@ Inspired by [all the other awesome things](https://github.com/bayandin/awesome-a
 - [Vaughn Vernon: Software Craftsman](https://vaughnvernon.co/)
 - [CQRS & Event Sourcing by Daniel Whittaker](http://danielwhittaker.me/)
 - [Software Design by Rinat Abdullin](https://abdullin.com/)
-- [Think Before Coding by Jérémie Chassaing](http://thinkbeforecoding.com/)
+- [Think Before Coding by JÃ©rÃ©mie Chassaing](http://thinkbeforecoding.com/)
 - [Konrad Garus](http://squirrel.pl/blog/tag/cqrs/)
 
 ## Podcasts

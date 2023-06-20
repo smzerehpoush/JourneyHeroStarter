@@ -22,14 +22,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net.JourneyHero.WebApi", "A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B94EE1DD-D2C2-43F1-B72D-89693593C159}"
 	ProjectSection(SolutionItems) = preProject
-		docs\ARCHITECTURE.md = docs\ARCHITECTURE.md
-		docs\CQRS-ES.md = docs\CQRS-ES.md
-		docs\DDD.md = docs\DDD.md
-		docs\HEXAGONAL.md = docs\HEXAGONAL.md
-		docs\SOLID.md = docs\SOLID.md
+		Application\docs\ARCHITECTURE.md = Application\docs\ARCHITECTURE.md
+		Application\docs\CQRS-ES.md = Application\docs\CQRS-ES.md
+		Application\docs\DDD.md = Application\docs\DDD.md
+		Application\docs\HEXAGONAL.md = Application\docs\HEXAGONAL.md
+		Application\docs\SOLID.md = Application\docs\SOLID.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{A73FEB23-2AD5-4EC3-BC9F-C9D9F9BA8821}"
+	ProjectSection(SolutionItems) = preProject
+		Application\README.md = Application\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{62C5FD9E-BE31-4816-8FBD-D3280A1C77AA}"
 EndProject

@@ -1,8 +1,6 @@
 # Architecture 
 This template uses the Onion Architecture, which is well-known to be used together with DDD patterns and practices.
 
-![](../images/dotnet-onion-ddd-cqrs-es.jpg)
-
 ## Quick Overview
 This architecture is sharing the principles of [Hexagonal Architecture](/HEXAGONAL.md)
 
